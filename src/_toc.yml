@@ -4,21 +4,44 @@
 format: jb-book
 root: intro
 parts:
-    - caption: PART_ONE
+    - caption: About Duckietown Cities
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
+          - file: part_1_AboutDuckietown/chapter_a_SignalLayers/index
             sections:
-                - file: part_1/chapter_a/section_1
-    - caption: PART_TWO
+                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_1_City-FloorLayer
+                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_2_City-RoadSignalsLayer
+                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_3_City-NonFunctionalElements
+          - file: part_1_AboutDuckietown/chapter_b_AppSpecs/index
+            sections:
+                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_1_AppSpecs-FloorLayer
+                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_2_AppSpecs-Topology
+                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_3_AppSpecs-TrafficSigns
+                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_4_AppSpecs-TrafficLights
+          - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/index
+            sections:
+                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_1_DTTypes-EmptyMap
+                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_2_DTTypes-CityLoop
+                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_3_DTTypes-NavigableCities
+                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_4_DTTypes-AutolabPointers
+    - caption: Assembling Duckietown Cities
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_2/chapter_b/index
+          - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/index
             sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
+                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_1_Assembly-Tiles-Preliminaries
+                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_2_Assembly-Tiles-Straights
+                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_3_Assembly-Tiles-Curves
+                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_4_Assembly-Tiles-Intersections
+          - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/index
             sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+                - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/section_1_ATS-Preliminaries
+                - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/section_2_ATS-Assembly
+                - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/section_3_ATS-MakingNewSigns
+          - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/index
+            sections:
+                - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/section_1_ATL-Overview
+                - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/section_2_ATL-Assembly
+                - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/section_3_ATL-SetupAndInitialization
