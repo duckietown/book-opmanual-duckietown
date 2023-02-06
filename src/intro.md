@@ -1,4 +1,4 @@
-(opmanual-dt-intro)=
+(dt-ops-intro)=
 # The Duckietown Operation Manual
 
 Welcome to the Duckietown (city) operation manual. 
