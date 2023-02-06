@@ -3,7 +3,9 @@
 
 Welcome to the Duckietown (city) operation manual. 
 
-Here you will find information on the design criteria of Duckietown cities, and the instructions for building one.  
+```{note}
+Here we define how Duckietown cities are built, and why. 
+```
 
 <!--
 * [](#dt-ops-preliminaries): What you need to know before you start.

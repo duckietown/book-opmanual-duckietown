@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-    - caption: About Duckietown Cities
+    - caption: About Duckietown (cities)
       maxdepth: 2
       numbered: False
       chapters:
@@ -12,7 +12,8 @@ parts:
             sections:
                 - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_1_City-FloorLayer
                 - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_2_City-RoadSignalsLayer
-                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_3_City-NonFunctionalElements
+                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_3_City-InfrastructureLayer
+                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_4_City-NonFunctionalElements
           - file: part_1_AboutDuckietown/chapter_b_AppSpecs/index
             sections:
                 - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_1_AppSpecs-FloorLayer
@@ -25,7 +26,7 @@ parts:
                 - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_2_DTTypes-CityLoop
                 - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_3_DTTypes-NavigableCities
                 - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_4_DTTypes-AutolabPointers
-    - caption: Assembling Duckietown Cities
+    - caption: Assembling Duckietown (cities)
       maxdepth: 2
       numbered: False
       chapters:
