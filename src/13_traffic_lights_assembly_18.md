@@ -1,19 +1,20 @@
 # Assembly - Traffic Light `DT18-TL` {#traffic-light-assembly-18 status=ready}
 
-<div class='requirements' markdown="1">
+```{needget}
+*   `DT18-TL` Traffic light components (can be sourced from the [Duckietown project shop](https://get.duckietown.com/collections/the-duckietown-city/products/smart-traffic-light?variant=32311801413771))
 
-Requires: `DT18-TL` Traffic light components (can be sourced from the [Duckietown project shop](https://get.duckietown.com/collections/the-duckietown-city/products/smart-traffic-light?variant=32311801413771))
+*   An appropriately [configured SD-card](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/setup_duckiebot.html).
 
-Requires: An appropriately [configured SD-card](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/setup_duckiebot.html).
-
-Requires: Tools: wood glue or hot glue gun.
-
-Result: Traffic light in configuration `DT18-TL`.
-</div>
+*   Tools: wood glue or hot glue gun.
+---
+*   Traffic light in configuration `DT18-TL`.
+```
 
 Traffic lights can be used to coordinate traffic at three or four way intersections in Duckietown. Hardware wise, traffic lights are essentially "Duckiebots without wheels", and a beautiful different chassis.
 
-Reminder: for traffic lights to be recognized by Duckiebots, appropriate signage must be placed at intersections (traffic light traffic sign instead of stop sign).
+```{attention}
+For traffic lights to be recognized by Duckiebots, appropriate signage must be placed at intersections (traffic light traffic sign instead of stop sign).
+```
 
 This section describes the physical assembly and installation of traffic lights.  
 
@@ -33,7 +34,9 @@ Traffic lights can double-up as [watchtowers](+opmanual_autolab#watchtower-hardw
 
 This section shows how to assemble the components from the laser cut traffic light parts.
 
-Warning: The small parts with the hole in the middle, i.e., the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+```{warning}
+The small parts with the hole in the middle, i.e., the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+```
 
 All parts should be glued together as showed in the pictures for enhanced structural stability.
 
@@ -212,7 +215,8 @@ All parts should be glued together as showed in the pictures for enhanced struct
 </figcaption>
 </div>  
 
-## Components of the traffic light {#tl-mat}
+(tl-mat)=
+## Components of the traffic light
 
 Now that you have assembled the traffic light chassis, you are ready to add the electronics.
 
@@ -261,8 +265,9 @@ Additionally, the traffic light structure can host:
 
 Bend the LED strip at an angle to reduce the chance that the exposed soldered wires short. The exposed part of the wires should **not** be in contact, **especially** when turning on the power.
 
-Warning: the actual traffic light in your hands might vary slightly from the pictures above. In particular, the electrical cables could have different colors or be soldered in different positions. Take note of what each color cable is soldered to, as same will go go with same on the other end.
-
+```{warning}
+the actual traffic light in your hands might vary slightly from the pictures above. In particular, the electrical cables could have different colors or be soldered in different positions. Take note of what each color cable is soldered to, as same will go go with same on the other end.
+```
 
 <div figure-id="fig:L-0">
 <img src="images/L-0.png" style="width: 80%"/>
@@ -448,14 +453,15 @@ You can verify the position is correct by verifying that Duckiebots at the red s
 
 You can finally use the provided double-sided tape pads to fix the traffic light to the tiles.
 
-### SD-card image Preparation {#dt-ops-tl-prep status=ready}
+(dt-ops-tl-prep)=
+### SD-card image Preparation
 
 At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your
 traffic light, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot), with the extra step of using the
 option `--type traffic_light`. Also, WiFi configuration for traffic lights is by default not set. You can add it
 using the `--wifi` option as specified int the [instructions](+opmanual_duckiebot#setup-duckiebot).
 
-An example flashing command for a wifi connected traffic light can be:
+An example flashing command for a Wi-Fi connected traffic light can be:
 
     laptop $ dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_light --configuration TL19 --wifi duckietown:quackquack
 
@@ -470,8 +476,9 @@ An example flashing command for a wifi connected traffic light can be:
     Username: duckie
     Password: quackquack
 
-Warning: For autolab users, do not change the username and password.
-
+```{warning}
+For autolab users, do not change the username and password.
+```
 <!--
 
 `DB17` instructions
@@ -489,7 +496,8 @@ See rc-control
 
 -->
 
-### Launch Traffic Lights {#dt-ops-tl-launch status=ready}
+(dt-ops-tl-launch)=
+### Launch Traffic Lights
 By choosing the `robot_type` to be `traffic_light`, the blinking behaviour should happen as soon as you boot your device.
 
 If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running
