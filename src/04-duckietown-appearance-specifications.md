@@ -1,14 +1,14 @@
-# Appearance Specifications {#dt-ops-appearance-specifications status=ready}
+(dt-ops-appearance-specifications)=
+# Appearance Specifications
 
-<div class='requirements' markdown="1">
-
-Requires: Nothing.
-
-Results: Knowledge of the Duckietown appearance specifications
+```{needget}
+* Nothing
+---
+* Knowledge of the Duckietown appearance specifications
+```
 
 Next Steps: [Duckietowns and Duckiebots](#dt-ops-city-definitions), or [Duckietown assembly](#dt-ops-assembly).
 
-</div>
 
 This document describes the Duckietown appearance specification. Specifications are a set of rules for which a functional system has been verified. This means that if these rules are followed while building a Duckietown, Duckiebots will (most probably!) work.
 
@@ -36,7 +36,8 @@ Note that the visual appearance of the area where the Duckietown is created is v
 
 -->
 
-## Layer 1 - The Floor Layer {#dt-ops-floor-app-specs status=ready}
+(dt-ops-floor-app-specs)=
+## Layer 1 - The Floor Layer
 
 The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are positioned in specific orders to create compliant Duckietowns. The road elements are shown in [](#fig:tiles), note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
 
@@ -82,15 +83,18 @@ The empty tiles can be of any color, although it is discouraged to use the same 
 
 For tiles to become road elements, we need to apply road markings. Road markings can be obtained through the application of tapes of different colors and sizes.
 
-### Tapes {#dt-ops-app-spec-tapes status=ready}
+(dt-ops-app-spec-tapes)=
+### Tapes
 
 There are 3 colors of tapes used in Duckietown: white, yellow, and red.
 
 #### White tape
 
+$$
 \begin{proposition}\label{prop:white_tape}
 A Duckiebot on a road never collides with Duckiebots or other Duckietown elements if it never crosses or touches a white tape strip.
 \end{proposition}
+$$
 
 Here are some facts about the white tapes:
 
@@ -164,9 +168,12 @@ Some examples of **non-conforming** topologies are shown in [](#fig:violates).
 </div>
 
 
-### Parking Lots {#parking status=draft}
+(parking status)=
+### Parking Lots
 
-Note: The tile types described here are experimental. Use at your own risk!
+```{note}
+The tile types described here are experimental. Use at your own risk!
+```
 
 A parking lot is a place for Duckiebots to go when they are tired and need a rest.
 
@@ -188,9 +195,12 @@ The following are the rules for a conforming parking lot:
 TODO: this point needs further specification
 -->
 
-### Launch Tiles {#launch-tiles status=draft}
+(launch-tiles)=
+### Launch Tiles
 
-Note: The tile type described here is experimental. Use at your own risk!
+```{note}
+The tile type described here is experimental. Use at your own risk!
+```
 
 A "launch tile" is used to introduce a new Duckiebot into a Duckietown in a controllable way. The launch file should be placed adjacent to a turn tile so that a Duckiebot may "merge" into Duckietown once the initialization procedure is complete.
 <!--
@@ -208,7 +218,8 @@ A "yield" sign should be visible from the launch tile.
 
 Generally, it is advisable to adhere signal layer elements to the tiles with double-sided tape. **Under no circumstances should any tape be obscured by the base of the stands**. At least a 0.5 cm free (black) space should separate any line from a signal layer elements' base.     
 
-## Traffic Signs {#traffic-signs status=ready}
+(traffic-signs)=
+## Traffic Signs
 
 Traffic signage in Duckietown is obtained through the union of a traffic signs and an April Tag, as shown in [](#fig:traffic-sign-example)
 
@@ -282,13 +293,17 @@ The allowable traffic signs are as in [](#fig:traffic-signs).
   </div>
 </div>
 
-### Placement {#traffic-signs-placement status=ready}
+(traffic-signs-placement)=
+### Placement
 
 Signs may appear on the opposite side and at the corner of the adjacent tile from which they are viewed. In the absence of any signs, it is assumed that all network flows are allowed so a sign MUST be placed and visible whenever this is not the case.
 
 Signs must only be placed on empty tiles, or next to one of the other tile types if on the border of a map. As mentioned, it is important to not overlap the base of the sign stand with any road marking.
 
-The sign placements for four different cases are shown in [](#sign-placement). At intersections, from each stop line 2 signs should be clearly visible: 1) the intersection type (traffic light or stop sign) and 2) the intersection topology (3-way with correct orientation, or 4-way).
+The sign placements for four different cases are shown in [](#sign-placement). At intersections, from each stop line 2 signs should be clearly visible:
+
+1. the intersection type (traffic light or stop sign)
+2. the intersection topology (3-way with correct orientation, or 4-way).
 
 <!--
 
@@ -316,12 +331,13 @@ On straight and curved roads, additional signs can be added as desired. Their pl
 In these figures the arrow is the direction of the sign.
 
 
-## Street Name Signs {#street-name-signs status=beta}
+(street-name-signs)=
+## Street Name Signs
 
 ### Specifications
 
 
-* Font: arial.
+* Font: Arial.
 
 * Color: white as foreground and green as background.
 
@@ -362,7 +378,8 @@ The placement of the road name signs is as indicated in [](#fig:name-placement).
 
 Street name signs should never be perpendicular to the road - they are too big and obtrusive.
 
-## Traffic Lights {#traffic-light-app-spec status=ready}
+(traffic-light-app-spec)=
+## Traffic Lights
 
 The assembly procedure for building traffic lights can be found in [](#traffic-light-assembly-18).
 
