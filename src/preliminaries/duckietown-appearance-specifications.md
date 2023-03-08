@@ -7,8 +7,6 @@
 * Knowledge of the Duckietown appearance specifications
 ```
 
-Next Steps: [Duckietowns and Duckiebots](#dt-ops-city-definitions), or [Duckietown assembly](#dt-ops-assembly).
-
 
 This document describes the Duckietown appearance specification. Specifications are a set of rules for which a functional system has been verified. This means that if these rules are followed while building a Duckietown, Duckiebots will (most probably!) work.
 
@@ -39,44 +37,71 @@ Note that the visual appearance of the area where the Duckietown is created is v
 (dt-ops-floor-app-specs)=
 ## Layer 1 - The Floor Layer
 
-The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are positioned in specific orders to create compliant Duckietowns. The road elements are shown in [](#fig:tiles), note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
+The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are positioned in specific orders to create compliant Duckietowns. The road elements are shown in {nameref}`fig:tiles`, note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
 
 
 Each tile is square and measures 61 x 61 cm (2 ft x 2 ft) from the outer edges of the interlocking dents. The thickness of the tiles is not as important as the surface roughness. The objective is having good grip between the Duckiebots and the road in order to minimize slipping of the wheels.
 
-<div figure-id="fig:tiles" figure-class="flow-subfigures" figure-caption="The principal tile types in Duckietown">
-    <div figure-id="subfig:straight" figure-caption="DT17_tile_straight">
-        <img src="DT17_tile_straight-texture.png" style='width: 20ex'/>
-    </div>
-    <div figure-id="subfig:DT17_tile_curve_left" figure-caption="DT17_tile_curve_left">
-        <img src="DT17_tile_curve_left-texture.png" style='width: 20ex'/>
-    </div>
-    <div figure-id="subfig:DT17_tile_curve_right" figure-caption="DT17_tile_curve_right">
-        <img src="DT17_tile_curve_right-texture.png" style='width: 20ex'/>
-    </div>
-    <div figure-id="subfig:DT17_tile_three_way_center" figure-caption="DT17_tile_three_way_center">
-        <img src="DT17_tile_three_way_center-texture.png" style='width: 20ex'/>
-    </div>
-    <div figure-id="subfig:DT17_tile_four_way_center" figure-caption="DT17_tile_four_way_center">
-        <img src="DT17_tile_four_way_center-texture.png" style='width: 20ex'/>
-    </div>
-    <div figure-id="subfig:DT17_tile_empty" figure-caption="DT17_tile_empty">
-        <img src="DT17_tile_empty-texture.png" style='width: 20ex'/>
-    </div>
-</div>
+````{list-table} The principal tile types in Duckietown
+:name: fig:tiles
 
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_tile_straight-texture.png
+    :name: subfig:straight
 
-<div figure-id="fig:DT17_map_loop3" figure-caption="A 3 by 3 city loop (DT17_map_loop3)">
-    <img src="DT17_map_loop3-texture.png" style='width: 8cm'/>
-</div>
+    DT17_tile_straight
+    ```
 
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_tile_curve_left-texture.png
+    :name: subfig:DT17_tile_curve_left
 
-<div figure-id="fig:DT17_usage_four_way" figure-caption="Four way intersection usage">
-    <img src="DT17_usage_four_way-texture.png" style='width: 8cm'/>
-</div>
-<div figure-id="fig:DT17_usage_three_way" figure-caption="Three way intersection usage">
-    <img src="DT17_usage_three_way-texture.png" style='width: 8cm'/>
-</div>
+    DT17_tile_curve_left
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_tile_curve_right-texture.png
+    :name: subfig:DT17_tile_curve_right
+
+    DT17_tile_curve_right
+    ```
+
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_tile_three_way_center-texture.png
+    :name: subfig:DT17_tile_three_way_center
+
+    DT17_tile_three_way_center
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_tile_four_way_center-texture.png
+    :name: subfig:DT17_tile_four_way_center
+
+    DT17_tile_four_way_center
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_tile_empty-texture.png
+    :name: subfig:DT17_tile_empty
+
+    DT17_tile_empty
+    ```
+````
+
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_map_loop3-texture.png
+:name: fig:DT17_map_loop3
+:width: 8cm
+
+A 3 by 3 city loop (DT17_map_loop3)
+```
+
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_usage_four_way-texture.png
+:name: fig:DT17_usage_four_way
+:width: 8cm
+
+Four way intersection usage
+```
+
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/DT17_usage_three_way-texture.png
+:name: fig:DT17_usage_three_way
+:width: 8cm
+
+Three way intersection usage
+```
 
 
 The empty tiles can be of any color, although it is discouraged to use the same colors as the road markings (red, white and yellow).
@@ -107,7 +132,7 @@ Here are some facts about the white tapes:
 
 % Comment: this should be part of the "traffic rules" sections.
 
-* For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by three pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ([](#fig:curved)).
+* For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by three pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ({nameref}`fig:curved`).
 
 <div figure-id="fig:curved" figure-caption="The specification for a curved road tile">
   <img src="opmanual_duckietown/images/tiles/curved_appearance_spec.png" style='width: 30em; height:auto'/>
@@ -125,7 +150,7 @@ Here are some facts about the yellow tapes:
 
 * The yellow tape is always placed on the left hand side of a lane, i.e., in the center of the road. We assume that the Duckiebots drive on the right hand side of the road.
 
-Yellow tapes on curves: see curved road image ([](#fig:curved)) in white tape section. Pieces at tile edges should be in center of lane, piece at the middle of the curve should be approximately 21 cm from middle of inner center white piece of tape, with approximated circular arc in between.
+Yellow tapes on curves: see curved road image ({nameref}`fig:curved`) in white tape section. Pieces at tile edges should be in center of lane, piece at the middle of the curve should be approximately 21 cm from middle of inner center white piece of tape, with approximated circular arc in between.
 
 #### Red tape
 
@@ -133,7 +158,7 @@ Red tapes MAY **only** appear on **intersection** tiles.
 
 The width of the red tape must be the same as the white roll (roughly 4.8cm or 1.88 inches) and should cross the entire lane perpendicular to the road.
 
-The placement of red tape should always be **under** yellow and white tape, as shown, e.g., in [](#fig:DT17_usage_four_way) or [](#fig:DT17_usage_three_way).
+The placement of red tape should always be **under** yellow and white tape, as shown, e.g., in {numref}`fig:DT17_usage_four_way` or {numref}`fig:DT17_usage_three_way`.
 
 A Duckiebot navigates Duckietown by a sequence of:
 
@@ -142,9 +167,11 @@ A Duckiebot navigates Duckietown by a sequence of:
 * Executing an intersection traversal,
 * Re-localizing in a straight tile.
 
-\begin{proposition}
+```{admonition} Proposition
+:class: note
+
 If the Duckiebot stops before or ON the red strip, no collisions are possible.
-\end{proposition}
+```
 
 ### Topological Constraints During Map Construction
 
@@ -154,30 +181,30 @@ Here are some topological rule constraints that must be met:
 
 2. Any two adjacent non-empty tiles must have a feasible path from one to the other **of length two**: if they are adjacent, they must be connected.
 
-Some examples of **non-conforming** topologies are shown in [](subfig:violates1),[](subfig:violates2) and [](subfig:violates3).
+Some examples of **non-conforming** topologies are shown in [the figure below](fig:violates).
 
-```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates1.svg
-:width: 20ex
-:name: subfig:violates1
+````{list-table}
+:name: fig:violates
 
-Topology violates rule 2 since the bottom two curved tiles are adjacent but not connected
-```
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates1.svg
+    :name: subfig:violates1
 
-```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates2.svg
-:width: 20ex
-:name: subfig:violates2
+    Topology violates rule 2 since the bottom two curved tiles are adjacent but not connected
+    ```
 
-Topology violates rule 1 since curved tiles are adjacent to intersection tiles 
-```
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates2.svg
+    :name: subfig:violates2
 
-```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates3.svg
-:width: 20ex
-:name: subfig:violates3
+    Topology violates rule 1 since curved tiles are adjacent to intersection tiles 
+    ```
 
-Topology violates rule 2 since left-most tiles are adjacent but not connected
-```
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates3.svg
+    :name: subfig:violates3
 
-(parking status)=
+    Topology violates rule 2 since left-most tiles are adjacent but not connected
+    ```
+````
+(parking)=
 ### Parking Lots
 
 ```{note}
@@ -188,7 +215,7 @@ A parking lot is a place for Duckiebots to go when they are tired and need a res
 
 A parking lot introduces three additional tile types:
 
-1. **Parking lot entry tile**: This is similar to a straight  tile except with a red stop in the middle. The parking lot sign ([](#fig:parking)) will be visible from this stop line.
+1. **Parking lot entry tile**: This is similar to a straight  tile except with a red stop in the middle. The parking lot sign ({nameref}`fig:parking`) will be visible from this stop line.
 2. **Parking spot tiles**:
 3. **Parking spot access tiles**:
 
@@ -230,15 +257,20 @@ Generally, it is advisable to adhere signal layer elements to the tiles with dou
 (traffic-signs)=
 ## Traffic Signs
 
-Traffic signage in Duckietown is obtained through the union of a traffic signs and an April Tag, as shown in [](#fig:traffic-sign-example)
+Traffic signage in Duckietown is obtained through the union of a traffic signs and an April Tag, as shown in {numref}`fig:traffic-sign-example`
 
-<div figure-id="fig:traffic-sign-example" figure-caption="A traffic sign in Duckietown (do not print this one out!)">
-  <img src="traffic-sign-example.png" style='width: 20em; height:auto'/>
-</div>
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/traffic-sign-example.png
+:name: fig:traffic-sign-example
+:width: 80%
+
+A traffic sign in Duckietown (do not print this one out!)
+```
 
 We call the symbol above _traffic sign_, while the code below is an AprilTag.
 
-Requires: To print and assemble the signs refer to [](#dt-ops-city-traffic-signs).
+```{note}
+To print and assemble the signs refer to [](dt-ops-city-traffic-signs).
+```
 
 ### Specifications
 
@@ -252,55 +284,110 @@ For traffic signage to be compliant:
 
 ### Types
 
-The allowable traffic signs are as in [](#fig:traffic-signs).
+The allowable traffic signs are as in {numref}`tab:traffic-signs`.
 
-<div figure-id="fig:traffic-signs" figure-class="flow-subfigures" figure-caption="Duckietown Traffic Signs">
-  <div figure-id="subfig:stop" figure-caption="stop">
-    <img src="stop.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:yield" figure-caption="yield">
-    <img src="yield.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:no-right" figure-caption="no-right-turn">
-    <img src="no-right.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:no-left" figure-caption="no-left-turn">
-    <img src="no-left.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:no-enter" figure-caption="do-not-enter">
-    <img src="no-enter.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:one-way-right" figure-caption="oneway-right">
-    <img src="one-way-right.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:one-way-left" figure-caption="oneway-left">
-    <img src="one-way-left.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:4-way-intersect" figure-caption="4-way-intersect">
-    <img src="4-way.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:3-way-right" figure-caption="right-T-intersect">
-    <img src="3-way-right.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:3-way-left" figure-caption="left-T-intersect">
-    <img src="3-way-left.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:t-intersection" figure-caption="T-intersection">
-    <img src="t-intersection.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:crossing" figure-caption="pedestrian">
-    <img src="crossing.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:traffic-light" figure-caption="t-light-ahead">
-    <img src="traffic-light.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:duckie-crossing" figure-caption="duck-crossing">
-    <img src="duckie-crossing.png" style='width:8em;height:auto'/>
-  </div>
-  <div figure-id="subfig:parking" figure-caption="parking">
-    <img src="parking.png" style='width:8em;height:auto'/>
-  </div>
-</div>
+````{list-table} Duckietown Traffic Signs
+:name: tab:traffic-signs
+
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/stop.png
+    :name: subfig:stop
+    :width: 80%
+
+    stop
+    ```
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/yield.png
+    :name: subfig:yield
+    :width: 80%
+
+    yield
+    ```
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/no-right.png
+    :name: subfig:no-right
+    :width: 80%
+
+    no-right-turn
+    ```
+
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/no-left.png
+    :name: subfig:no-left
+    :width: 80%
+
+    no-left-turn
+    ```
+  
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/no-enter.png
+    :name: subfig:no-enter
+    :width: 80%
+
+    do-not-enter
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/one-way-right.png
+    :name: subfig:one-way-right
+    :width: 80%
+
+    one-way-right
+    ```
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/one-way-left.png
+    :name: subfig:one-way-left
+    :width: 80%
+
+    one-way-left
+    ```
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/4-way.png
+    :name: subfig:4-way-intersect
+    :width: 80%
+
+    4-way-intersect
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/3-way-right.png
+    :name: subfig:3-way-right
+    :width: 80%
+
+    right-T-intersect
+    ```
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/3-way-left.png
+    :name: subfig:3-way-left
+    :width: 80%
+
+    left-T-intersect
+    ```
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/t-intersection.png
+    :name: subfig:t-intersection
+    :width: 80%
+
+    t-intersection
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/crossing.png
+    :name: subfig:crossing
+    :width: 80%
+
+    pedestrian
+    ```
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/traffic-light.png
+    :name: subfig:traffic-light
+    :width: 80%
+
+    t-light-ahead
+    ```
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/duckie-crossing.png
+    :name: subfig:duckie-crossing
+    :width: 80%
+
+    duck-crossing
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/parking.png
+    :name: subfig:praking
+    :width: 80%
+
+    parking
+    ```
+  
+  
+````
 
 (traffic-signs-placement)=
 ### Placement
@@ -309,7 +396,7 @@ Signs may appear on the opposite side and at the corner of the adjacent tile fro
 
 Signs must only be placed on empty tiles, or next to one of the other tile types if on the border of a map. As mentioned, it is important to not overlap the base of the sign stand with any road marking.
 
-The sign placements for four different cases are shown in [](#sign-placement). At intersections, from each stop line 2 signs should be clearly visible:
+The sign placements for four different cases are shown in {numref}`tab:sign-placement`. At intersections, from each stop line 2 signs should be clearly visible:
 
 1. the intersection type (traffic light or stop sign)
 2. the intersection topology (3-way with correct orientation, or 4-way).
@@ -320,22 +407,36 @@ At present, 4-way intersections must be equipped with traffic lights for safe na
 
 -->
 
-<div figure-id="fig:sign-placement" figure-class="flow-subfigures" figure-caption="Placement of Traffic Signs">
-  <div figure-id="subfig:4-way-signs" figure-caption="4-way intersection">
-    <img src="4-way-signs.pdf" style='width:15em;height:auto'/>
-  </div>
-  <div figure-id="subfig:3-way-signs" figure-caption="3-way intersection">
-    <img src="3-way-signs.pdf" style='width:15em;height:auto'/>
-  </div>
-  <div figure-id="subfig:2-way-signs-straight" figure-caption="straight road">
-    <img src="2-way-signs-straight.pdf" style='width:15em;height:auto'/>
-  </div>
-  <div figure-id="subfig:2-way-signs-turn" figure-caption="curved road">
-    <img src="2-way-signs-turn.pdf" style='width:15em;height:auto'/>
-  </div>
-</div>
+````{list-table} Placement of Traffic Signs
+:name: tab:sign-placement
 
-On straight and curved roads, additional signs can be added as desired. Their placement is indicated in [](#subfig:2-way-signs-straight) and [](#subfig:2-way-signs-turn). The signs should be placed at the border between two tiles and should face towards oncoming traffic as indicated.
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/4-way-signs.svg
+    :name: subfig:4-way-signs
+
+    4-way intersection
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/3-way-signs.svg
+    :name: subfig:3-way-signs
+
+    3-way intersection
+    ```
+
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/2-way-signs-straight.svg
+    :name: subfig:2-way-signs-straight
+
+    straight road
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/2-way-signs-turn.svg
+    :name: subfig:2-way-signs-turn
+
+    curved road
+    ```
+
+````
+
+On straight and curved roads, additional signs can be added as desired. Their placement is indicated in {numref}`subfig:2-way-signs-straight` and {numref}`subfig:2-way-signs-turn`. The signs should be placed at the border between two tiles and should face towards oncoming traffic as indicated.
 
 In these figures the arrow is the direction of the sign.
 
@@ -374,16 +475,23 @@ Every segment of road must have at least one road name sign.
 
 Every turn tile should have a road name sign.
 
-The placement of the road name signs is as indicated in [](#fig:name-placement).
+The placement of the road name signs is as indicated in {nameref}`fig:name-placement`).
 
-<div figure-id="fig:name-placement" figure-class="flow-subfigures" figure-caption="Placement of Road Name Signs">
-  <div figure-id="subfig:name-signs-turn" figure-caption="Turn">
-    <img src="name-signs-turn.pdf" style='width:15em;height:auto'/>
-  </div>
-  <div figure-id="subfig:name-signs-straight" figure-caption="Straight">
-    <img src="name-signs-straight.pdf" style='width:15em;height:auto'/>
-  </div>
-</div>
+````{list-table} Placement of Road Name Signs
+:name: fig:name-placement
+
+* - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/name-signs-turn.svg
+    :name: subfig:name-signs-turn
+
+    Turn
+    ```
+
+  - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/name-signs-straight.svg
+    :name: subfig:name-signs-straight
+
+    Straight
+    ```
+````
 
 Street name signs should never be perpendicular to the road - they are too big and obtrusive.
 
