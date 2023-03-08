@@ -464,15 +464,15 @@ dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_
 ```
 
 - For Autolab users: since traffic lights are coupled to watchtowers, please use the watchtower setup:
-        hostname : watchtowerXX
+    *   hostname : `watchtowerXX`
 
 - However, if you just want to use it as a traffic light, use the trafficlight setup:
-        hostname : trafficlightXX
+    *   hostname : `trafficlightXX`
 
 - The default username and password are all the same:
 
-    Username: duckie
-    Password: quackquack
+    *   Username: `duckie`
+    *   Password: `quackquack`
 
 ```{warning}
 For autolab users, do not change the username and password.
