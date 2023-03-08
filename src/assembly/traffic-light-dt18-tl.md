@@ -498,7 +498,7 @@ See rc-control
 ### Launch Traffic Lights
 By choosing the `robot_type` to be `traffic_light`, the blinking behaviour should happen as soon as you boot your device.
 
-If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running:
+If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running, inside the container:
 
 ```shell
 roslaunch duckiebot_interface all_drivers.launch veh:=![NAME] robot_type:=traffic_light
