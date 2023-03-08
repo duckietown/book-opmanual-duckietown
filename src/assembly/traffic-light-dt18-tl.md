@@ -46,7 +46,10 @@ All parts should be glued together as showed in the pictures for enhanced struct
 ```{figure} ../_images/assembly/traffic_light_18/G-1.jpg
 :width: 80%
 :name: fig:G-1
+
+Traffic light parts
 ```
+
 ```{figure} ../_images/assembly/traffic_light_18/G-2.jpg
 :width: 50%
 :name: fig:G-2
@@ -381,6 +384,8 @@ Use the spacers and the screws to mount the Raspberry Pi on the Raspberry Pi gro
 ```{figure} ../_images/assembly/traffic_light_18/TL-18.jpg
 :width: 80%
 :name: fig:TL-18
+
+Raspberry Pi mounted on ground plate
 ```
 
 Plug the shield on top of the Raspberry Pi.  
