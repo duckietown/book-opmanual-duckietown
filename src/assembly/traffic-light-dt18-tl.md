@@ -459,9 +459,9 @@ using the `--wifi` option as specified int the [instructions](+opmanual_duckiebo
 
 An example flashing command for a Wi-Fi connected traffic light can be:
 
-    ```sh
-    dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_light --configuration TL19 --wifi duckietown:quackquack
-    ```
+```shell
+dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_light --configuration TL19 --wifi duckietown:quackquack
+```
 
 - For Autolab users: since traffic lights are coupled to watchtowers, please use the watchtower setup:
         hostname : watchtowerXX
@@ -500,9 +500,9 @@ By choosing the `robot_type` to be `traffic_light`, the blinking behaviour shoul
 
 If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running:
 
-    ```sh
-    roslaunch duckiebot_interface all_drivers.launch veh:=![NAME] robot_type:=traffic_light
-    ```
+```shell
+roslaunch duckiebot_interface all_drivers.launch veh:=![NAME] robot_type:=traffic_light
+```
 
 
 <!--
