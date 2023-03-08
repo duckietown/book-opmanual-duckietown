@@ -90,11 +90,12 @@ There are 3 colors of tapes used in Duckietown: white, yellow, and red.
 
 #### White tape
 
-$$
-\begin{proposition}\label{prop:white_tape}
+```{admonition} Proposition
+:class: note
+:name: prop:white_tape
+
 A Duckiebot on a road never collides with Duckiebots or other Duckietown elements if it never crosses or touches a white tape strip.
-\end{proposition}
-$$
+```
 
 Here are some facts about the white tapes:
 
@@ -104,7 +105,7 @@ Here are some facts about the white tapes:
 
 * The white tape is always placed on the right hand side of a lane. We assume that the Duckiebots drive on the right hand side of the road.
 
-Comment: this should be part of the "traffic rules" sections.
+% Comment: this should be part of the "traffic rules" sections.
 
 * For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by three pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ([](#fig:curved)).
 
@@ -153,20 +154,28 @@ Here are some topological rule constraints that must be met:
 
 2. Any two adjacent non-empty tiles must have a feasible path from one to the other **of length two**: if they are adjacent, they must be connected.
 
-Some examples of **non-conforming** topologies are shown in [](#fig:violates).
+Some examples of **non-conforming** topologies are shown in [](subfig:violates1),[](subfig:violates2) and [](subfig:violates3).
 
-<div figure-id="fig:violates" figure-class="flow-subfigures" figure-caption="Some non-conforming Duckietown map topologies">
-    <div figure-id="subfig:violates1" figure-caption="Topology violates rule 2 since the bottom two curved tiles are adjacent but not connected">
-        <img src="violates1.pdf" style='width: 20ex;height:auto'/>
-    </div>
-    <div figure-id="subfig:violates2" figure-caption="Topology violates rule 1 since curved tiles are adjacent to intersection tiles ">
-        <img src="violates2.pdf" style='width: 20ex;height:auto'/>
-    </div>
-    <div figure-id="subfig:violates3" figure-caption="Topology violates rule 2 since left-most tiles are adjacent but not connected">
-        <img src="violates3.pdf" style='width: 20ex;height:auto'/>
-    </div>
-</div>
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates1.svg
+:width: 20ex
+:name: subfig:violates1
 
+Topology violates rule 2 since the bottom two curved tiles are adjacent but not connected
+```
+
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates2.svg
+:width: 20ex
+:name: subfig:violates2
+
+Topology violates rule 1 since curved tiles are adjacent to intersection tiles 
+```
+
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/violates3.svg
+:width: 20ex
+:name: subfig:violates3
+
+Topology violates rule 2 since left-most tiles are adjacent but not connected
+```
 
 (parking status)=
 ### Parking Lots
