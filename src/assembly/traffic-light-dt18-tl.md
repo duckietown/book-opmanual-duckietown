@@ -29,7 +29,7 @@ Traffic lights are crucial parts in modern cities. We rely on them to have well-
 
 Traffic lights are composed of two supports connected by an overhanging tube. They are intended to be placed on the diagonal direction of an intersection. One of the supports is equipped with the computational stack and an overseeing camera.
 
-Traffic lights can double-up as [watchtowers](+opmanual_autolab#watchtower-hardware-assembly-WT18) when upgrading a Duckietown to [Duckietown Autolab](+opmanual_autolab#book). 
+Traffic lights can double-up as [watchtowers](+opmanual_autolab#watchtower-hardware-assembly-WT18) [**TODO: update intersphinx**] when upgrading a Duckietown to [Duckietown Autolab](+opmanual_autolab#book) [**TODO: update intersphinx**]. 
 
 ## Assembly of the traffic light parts
 
@@ -453,9 +453,9 @@ You can finally use the provided double-sided tape pads to fix the traffic light
 ### SD-card image Preparation
 
 At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your
-traffic light, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot), with the extra step of using the
+traffic light, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot) [**TODO: update intersphinx**], with the extra step of using the
 option `--type traffic_light`. Also, WiFi configuration for traffic lights by default is not set. You can add it
-using the `--wifi` option as specified int the [instructions](+opmanual_duckiebot#setup-duckiebot).
+using the `--wifi` option as specified int the [instructions](+opmanual_duckiebot#setup-duckiebot) [**TODO: update intersphinx**].
 
 An example flashing command for a Wi-Fi connected traffic light can be:
 
