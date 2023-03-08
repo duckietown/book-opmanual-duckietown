@@ -37,7 +37,11 @@ Note that the visual appearance of the area where the Duckietown is created is v
 (dt-ops-floor-app-specs)=
 ## Layer 1 - The Floor Layer
 
-The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are positioned in specific orders to create compliant Duckietowns. The road elements are shown in {nameref}`fig:tiles`, note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
+The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are positioned in specific orders to create compliant Duckietowns. The road elements are shown in {numref}`fig:tiles`.
+
+```{note}
+The left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
+```
 
 
 Each tile is square and measures 61 x 61 cm (2 ft x 2 ft) from the outer edges of the interlocking dents. The thickness of the tiles is not as important as the surface roughness. The objective is having good grip between the Duckiebots and the road in order to minimize slipping of the wheels.
@@ -132,11 +136,16 @@ Here are some facts about the white tapes:
 
 % Comment: this should be part of the "traffic rules" sections.
 
-* For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by three pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ({nameref}`fig:curved`).
+* For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by three pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ({numref}`fig:curved`).
 
-<div figure-id="fig:curved" figure-caption="The specification for a curved road tile">
-  <img src="opmanual_duckietown/images/tiles/curved_appearance_spec.png" style='width: 30em; height:auto'/>
-</div>
+```{figure} ../_images/preliminaries/duckietown-appearance-specification/tiles/curved_appearance_spec.png
+---
+width: 80%
+align: center
+name: fig:curved
+---
+The specification for a curved road tile
+```
 
 #### Yellow tape
 
@@ -150,7 +159,7 @@ Here are some facts about the yellow tapes:
 
 * The yellow tape is always placed on the left hand side of a lane, i.e., in the center of the road. We assume that the Duckiebots drive on the right hand side of the road.
 
-Yellow tapes on curves: see curved road image ({nameref}`fig:curved`) in white tape section. Pieces at tile edges should be in center of lane, piece at the middle of the curve should be approximately 21 cm from middle of inner center white piece of tape, with approximated circular arc in between.
+Yellow tapes on curves: see curved road image ({numref}`fig:curved`) in white tape section. Pieces at tile edges should be in center of lane, piece at the middle of the curve should be approximately 21 cm from middle of inner center white piece of tape, with approximated circular arc in between.
 
 #### Red tape
 
@@ -215,7 +224,7 @@ A parking lot is a place for Duckiebots to go when they are tired and need a res
 
 A parking lot introduces three additional tile types:
 
-1. **Parking lot entry tile**: This is similar to a straight  tile except with a red stop in the middle. The parking lot sign ({nameref}`fig:parking`) will be visible from this stop line.
+1. **Parking lot entry tile**: This is similar to a straight  tile except with a red stop in the middle. The parking lot sign ({numref}`subfig:parking`) will be visible from this stop line.
 2. **Parking spot tiles**:
 3. **Parking spot access tiles**:
 
@@ -380,7 +389,7 @@ The allowable traffic signs are as in {numref}`tab:traffic-signs`.
     ```
 
   - ```{figure} ../_images/preliminaries/duckietown-appearance-specification/signs/parking.png
-    :name: subfig:praking
+    :name: subfig:parking
     :width: 80%
 
     parking
@@ -475,7 +484,7 @@ Every segment of road must have at least one road name sign.
 
 Every turn tile should have a road name sign.
 
-The placement of the road name signs is as indicated in {nameref}`fig:name-placement`).
+The placement of the road name signs is as indicated in {numref}`fig:name-placement`).
 
 ````{list-table} Placement of Road Name Signs
 :name: fig:name-placement
@@ -498,7 +507,7 @@ Street name signs should never be perpendicular to the road - they are too big a
 (traffic-light-app-spec)=
 ## Traffic Lights
 
-The assembly procedure for building traffic lights can be found in [](#traffic-light-assembly-18).
+The assembly procedure for building traffic lights can be found in [](traffic-light-assembly-18).
 
 ### Placement
 
@@ -510,4 +519,4 @@ The Raspberry Pi should sit on a pole that is based at the corner of the tile ou
 
 -->
 
-The computational stack of the traffic light should be mounted in the appropriate housing outside the allowable driving region. The cabling should be housed in the appropriate structure as detailed in [](#traffic-light-assembly-18). The traffic light pillar stands should be positioned in such a way that the embedded traffic sign stands respect the above specifications for traffic light stands.
+The computational stack of the traffic light should be mounted in the appropriate housing outside the allowable driving region. The cabling should be housed in the appropriate structure as detailed in [](traffic-light-assembly-18). The traffic light pillar stands should be positioned in such a way that the embedded traffic sign stands respect the above specifications for traffic light stands.
