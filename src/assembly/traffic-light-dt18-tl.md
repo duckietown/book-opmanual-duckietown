@@ -36,7 +36,7 @@ Traffic lights can double-up as [watchtowers](+opmanual_autolab#watchtower-hardw
 This section shows how to assemble the components from the laser cut traffic light parts.
 
 ```{warning}
-The small parts with the hole in the middle, i.e., the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+The small parts with the hole in the middle, i.e., the ones in the left of {numref}`fig:G-1`, are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
 ```
 
 All parts should be glued together as showed in the pictures for enhanced structural stability.
@@ -376,7 +376,7 @@ Put the tubes into the tube holders.
 ### Connect the Raspberry Pi
 
 
-Use the spacers and the screws to mount the Raspberry Pi on the Raspberry Pi ground plate as shown in [](#fig:TL-18).
+Use the spacers and the screws to mount the Raspberry Pi on the Raspberry Pi ground plate as shown in {numref}`fig:TL-18`.
 
 ```{figure} ../_images/assembly/traffic_light_18/TL-18.jpg
 :width: 80%
@@ -454,7 +454,9 @@ using the `--wifi` option as specified int the [instructions](+opmanual_duckiebo
 
 An example flashing command for a Wi-Fi connected traffic light can be:
 
-    laptop $ dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_light --configuration TL19 --wifi duckietown:quackquack
+    ```sh
+    dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_light --configuration TL19 --wifi duckietown:quackquack
+    ```
 
 - For Autolab users: since traffic lights are coupled to watchtowers, please use the watchtower setup:
         hostname : watchtowerXX
@@ -491,9 +493,11 @@ See rc-control
 ### Launch Traffic Lights
 By choosing the `robot_type` to be `traffic_light`, the blinking behaviour should happen as soon as you boot your device.
 
-If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running
+If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running:
 
-    duckiebot-container $ roslaunch duckiebot_interface all_drivers.launch veh:=![NAME] robot_type:=traffic_light
+    ```sh
+    roslaunch duckiebot_interface all_drivers.launch veh:=![NAME] robot_type:=traffic_light
+    ```
 
 
 <!--
