@@ -10,4 +10,4 @@ parts:
       chapters:
           - file: assembly/index
             sections:
-                - file: assembly/traffic-light-dt18-tl
+                - file: assembly/traffic-light-dt18-tl/index
