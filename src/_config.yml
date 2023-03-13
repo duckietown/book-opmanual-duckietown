@@ -38,4 +38,7 @@ html:
 sphinx:
   extra_extensions: []
   config:
-    intersphinx_mapping: {}
+    intersphinx_mapping: 
+      book-opmanual-autolab:
+        - "https://staging-docs.duckietown.com/daffy-staging/opmanual-autolab"
+        - null
