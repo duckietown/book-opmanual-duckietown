@@ -228,17 +228,19 @@ A parking lot introduces three additional tile types:
 2. **Parking spot tiles**:
 3. **Parking spot access tiles**:
 
-<!--
-TODO: the tape on the spot and spot access tiles is currently not yet specified.
--->
+```{todo}
+the tape on the spot and spot access tiles is currently not yet specified.
+```
+
 The following are the rules for a conforming parking lot:
 
 1. One "parking spot" has size one tile.
 2. From each parking spot, there is a path to go to the parking lot entry tile that does not intersect any other parking spot. (i.e. when a Duckiebot is parked, nobody will disturb it).
 3. From any position in any parking spot, a Duckiebot can see at least two orthogonal lines or a sign with an April tag.
-<!--
-TODO: this point needs further specification
--->
+
+```{todo}
+this point needs further specification
+```
 
 (launch-tiles)=
 ### Launch Tiles
@@ -248,20 +250,18 @@ The tile type described here is experimental. Use at your own risk!
 ```
 
 A "launch tile" is used to introduce a new Duckiebot into a Duckietown in a controllable way. The launch file should be placed adjacent to a turn tile so that a Duckiebot may "merge" into Duckietown once the initialization procedure is complete.
-<!--
-TODO: Specification for tape on the launch tile
--->
+
+```{todo}
+Specification for tape on the launch tile
+```
+
 A "yield" sign should be visible from the launch tile.
 
 ## Layer 2 - Signage and Lights
 
-<!--
-
-**IMPORTANT:** All signage should sit with base on the floor and stem coming through the connection between the tiles.
-
--->
-
-Generally, it is advisable to adhere signal layer elements to the tiles with double-sided tape. **Under no circumstances should any tape be obscured by the base of the stands**. At least a 0.5 cm free (black) space should separate any line from a signal layer elements' base.     
+Generally, it is advisable to adhere signal layer elements to the tiles with double-sided tape. 
+**Under no circumstances should any tape be obscured by the base of the stands**. 
+At least a 0.5 cm free (black) space should separate any line from a signal layer elements' base.     
 
 (traffic-signs)=
 ## Traffic Signs
@@ -472,9 +472,9 @@ In these figures the arrow is the direction of the sign.
 
 * Text direction: Horizontal for alphabetical languages.
 
-<!--
-TODO: clarify street name conventions
--->
+```{todo}
+clarify street name conventions
+```
 
 ### Placement
 
