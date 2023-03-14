@@ -16,6 +16,7 @@ parts:
         numbered: False
         chapters:
             -   file: assembly/road_tiles_assembly/index
+            -   file: assembly/traffic_signs_assembly/index
             -   file: assembly/index
                 sections:
                     -   file: assembly/traffic-light-dt18-tl/index

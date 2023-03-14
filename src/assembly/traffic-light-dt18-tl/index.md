@@ -4,42 +4,55 @@
 ```{needget}
 *   `DT18-TL` Traffic light components (can be sourced from the [Duckietown project shop](https://get.duckietown.com/collections/the-duckietown-city/products/smart-traffic-light?variant=32311801413771))
 
-*   An appropriately [configured SD-card](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/setup_duckiebot.html).
+*   An appropriately [configured SD-card](book-opmanual-duckiebot:setup-duckiebot-sd-card).
 
 *   Tools: wood glue or hot glue gun.
 ---
 *   Traffic light in configuration `DT18-TL`.
 ```
 
-Traffic lights can be used to coordinate traffic at three or four way intersections in Duckietown. Hardware wise, traffic lights are essentially "Duckiebots without wheels", and a beautiful different chassis.
+Traffic lights can be used to coordinate traffic at three or four way intersections in Duckietown. 
+Hardware wise, traffic lights are essentially "Duckiebots without wheels", and a beautiful different chassis.
 
 ```{attention}
-For traffic lights to be recognized by Duckiebots, appropriate signage must be placed at intersections (traffic light traffic sign instead of stop sign).
+For traffic lights to be recognized by Duckiebots, appropriate signage must be placed at intersections 
+(traffic light traffic sign instead of stop sign).
 ```
 
 This section describes the physical assembly and installation of traffic lights.  
 
+
 ## Overview
 
-<!--
+Traffic lights are crucial parts in modern cities. 
+We rely on them to have well-organized traffic. 
+In Duckietown, traffic lights serve the same purpose.
 
-Traffic lights are crucial parts in modern cities. We rely on them to have well-organized traffic. While autonomous cars could communicate with each other through so many different kinds of protocols, humans can't. Unless you are a terminator, or a RoboCop, or Neo. In the near future where autonomous cars drive with human drivers, we still need the help of traffic lights.
+They are composed of two supports connected by an overhanging tube. 
+They are intended to be placed on the diagonal direction of an intersection. 
+One of the supports is equipped with the computational stack and an overseeing camera.
 
--->
+Traffic lights can double-up as 
+[watchtowers](book-opmanual-autolab:watchtower-hardware-assembly-WT18) 
+when upgrading a Duckietown to [Duckietown Autolab](book-opmanual-autolab:book). 
 
-Traffic lights are composed of two supports connected by an overhanging tube. They are intended to be placed on the diagonal direction of an intersection. One of the supports is equipped with the computational stack and an overseeing camera.
+```{todo}
+update intersphinx links above
+```
 
-Traffic lights can double-up as [watchtowers](+opmanual_autolab#watchtower-hardware-assembly-WT18) [**TODO: update intersphinx**] when upgrading a Duckietown to [Duckietown Autolab](+opmanual_autolab#book) [**TODO: update intersphinx**]. 
 
 ## Assembly of the traffic light parts
 
 This section shows how to assemble the components from the laser cut traffic light parts.
 
 ```{warning}
-The small parts with the hole in the middle, i.e., the ones in the left of {numref}`fig:G-1`, are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+The small parts with the hole in the middle, i.e., the ones in the left of {numref}`fig:G-1`, 
+are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right 
+ones in the process (compare with the pics).
 ```
 
 All parts should be glued together as showed in the pictures for enhanced structural stability.
+
 
 ### Tube holder with big ground plate  
 
@@ -255,7 +268,7 @@ Additionally, the traffic light structure can host:
 Bend the LED strip at an angle to reduce the chance that the exposed soldered wires short. The exposed part of the wires should **not** be in contact, **especially** when turning on the power.
 
 ```{warning}
-the actual traffic light in your hands might vary slightly from the pictures above. In particular, the electrical cables could have different colors or be soldered in different positions. Take note of what each color cable is soldered to, as same will go go with same on the other end.
+The actual traffic light in your hands might vary slightly from the pictures above. In particular, the electrical cables could have different colors or be soldered in different positions. Take note of what each color cable is soldered to, as same will go go with same on the other end.
 ```
 
 ```{figure} ../../_images/assembly/traffic_light_18/L-0.png
@@ -453,9 +466,13 @@ You can finally use the provided double-sided tape pads to fix the traffic light
 ### SD-card image Preparation
 
 At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your
-traffic light, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot) [**TODO: update intersphinx**], with the extra step of using the
+traffic light, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot), with the extra step of using the
 option `--type traffic_light`. Also, WiFi configuration for traffic lights by default is not set. You can add it
-using the `--wifi` option as specified int the [instructions](+opmanual_duckiebot#setup-duckiebot) [**TODO: update intersphinx**].
+using the `--wifi` option as specified int the [instructions](+opmanual_duckiebot#setup-duckiebot).
+
+```{todo}
+update intersphinx links above
+```
 
 An example flashing command for a Wi-Fi connected traffic light can be:
 

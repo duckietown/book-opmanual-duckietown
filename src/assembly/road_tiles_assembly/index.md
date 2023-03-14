@@ -1,3 +1,4 @@
+
 (dt-ops-tiles)=
 # Road Tiles Assembly
 
@@ -12,11 +13,11 @@
 ```
 
 ## Before we begin 
-:::{tip}
+```{tip}
 To ensure that your streets will last long, make sure to follow these: 
 * Clean the tiles with a cloth and some water and soap before attaching any tape.
 * Place the yellow tape on the tile and cut out pieces rather than pre-cutting them and attaching them to the tile as glue will be lost if you do not directly place them at the intended spot.   
-:::
+```
 
 (dt-ops-tiles-straight)=
 ## Straight roads
@@ -204,9 +205,9 @@ The finished 4-way intersection lane segment looks as in {numref}`fig:tile_instr
 Finished 4-way intersection road segment.
 ```
 
-:::{tip}
+```{tip}
 You don't have to cut out the edges of the interlocking teeth from the white tape. Just use the overlapping tape to connect the road segment to the surrounding tiles nicely. 
-:::
+```
 
 ### Assembly of 3-way intersection 
 
