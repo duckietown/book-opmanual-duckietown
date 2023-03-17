@@ -466,9 +466,9 @@ You can finally use the provided double-sided tape pads to fix the traffic light
 ### SD-card image Preparation
 
 At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your
-traffic light, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot), with the extra step of using the
+traffic light, follow the instructions [here](book-opmanual-duckiebot:setup-duckiebot-sd-card), with the extra step of using the
 option `--type traffic_light`. Also, WiFi configuration for traffic lights by default is not set. You can add it
-using the `--wifi` option as specified int the [instructions](+opmanual_duckiebot#setup-duckiebot).
+using the `--wifi` option as specified int the [instructions](book-opmanual-duckiebot:setup-duckiebot-sd-card).
 
 ```{todo}
 update intersphinx links above
