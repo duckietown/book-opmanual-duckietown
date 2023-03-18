@@ -1,4 +1,0 @@
-(assembly)=
-# Assembly
-```{tableofcontents}
-```

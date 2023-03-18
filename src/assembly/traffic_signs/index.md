@@ -1,5 +1,5 @@
 (dt-ops-city-traffic-signs)=
-# Traffic Signs Assembly
+# Assembly - Traffic Signs
 
 ```{needget}
 The materials to build Duckietown signals.
@@ -10,8 +10,8 @@ A set of signs to be used for assembling your Duckietown.
 
 ## Build a Map
 
-Before beginning with sign assembly you should design a map that adheres 
-to [the specification](dt-ops-appearance-specifications).
+Before beginning with sign assembly you should design a tilemap that adheres 
+to [the tilemap layer specifications](specs-layer-tilemap).
 
 The full set of currently existing signs is available [here](https://github.com/duckietown/signs-and-tags).
 
@@ -85,7 +85,7 @@ Add a new block like the ones that already exists or modify the one with the app
 ```
 
 The value of `![NEW_STREET_NAME]` is up to you to decide (have fun with it!). 
-The value of `![TRAFFIC_SIGN_TYPE]` should be one of the signs in [](fig:traffic-signs)
+The value of `![TRAFFIC_SIGN_TYPE]` should be one of the signs in [](tab:traffic-signs).
 
 When finished, regenerate the PDF version of the Word file, and commit everything 
 to the repo (via a pull request of course).
@@ -103,28 +103,28 @@ but make sure that you specify in the `april_tags` code which database to load f
 
 A traffic sign stand consists of a laser cut structure as is show [](fig:traffic_stand_assembly_1).
 
-```{figure} ../../_images/traffic_sign/trafficsign_kit.png
+```{figure} ../../_images/assembly/traffic_signs/trafficsign_kit.png
 :width: 50%
 :name: fig:traffic_stand_assembly_1
 
-Traffic sign stand kit.
+Traffic sign stand kit
 ```
 
 Detach the components from the wooden plate and plug them together as in [](fig:traffic_stand_assembly_2). 
 Typically, the stands are very rigid, but if the structure seems a bit loose, use wooden glue to increase stability.
 
-```{figure} ../../_images/traffic_sign/trafficsign_stand_assembly.png
+```{figure} ../../_images/assembly/traffic_signs/trafficsign_stand_assembly.png
 :width: 35%
 :name: fig:traffic_stand_assembly_2
 
-Traffic sign stand assembled.
+Traffic sign stand assembled
 ```
 
-```{figure} ../../_images/traffic_sign/trafficsign_stand_assembled.png
+```{figure} ../../_images/assembly/traffic_signs/trafficsign_stand_assembled.png
 :width: 35%
 :name: fig:traffic_stand_assembly_3
 
-Traffic sign stand assembled with mounted traffic sign.
+Traffic sign stand assembled with mounted traffic sign
 ```
 
 
