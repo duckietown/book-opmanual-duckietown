@@ -1,16 +1,16 @@
-(dt-ops-intro)=
+(book)=
 # The Duckietown Operation Manual
 
-Welcome to the Duckietown (city) operation manual. 
+This document describes the Duckietown appearance specification and provides assembly instructions. 
+Specifications are a set of rules for which a functional system has been verified. 
+This means that if these rules are followed while building a Duckietown, Duckiebots will work as expected.
 
-```{note}
-Here we define how Duckietown cities are built, and why. 
-```
+Any Duckietown not adhering to the rules described here cannot be considered a Duckietown, 
+and may cause the Duckiebots operating within them to fail in (possibly spectacularly) unexpected ways.
 
-<!--
-* [](#dt-ops-preliminaries): What you need to know before you start.
-* [](#dt-ops-assembly): What you need to know to build a Duckietown.
--->
+Small perturbations to the appearance specifications might affect negatively the performance of Duckiebots, 
+although most algorithms are robust to variations.
+
 
 ```{tableofcontents}
 ```

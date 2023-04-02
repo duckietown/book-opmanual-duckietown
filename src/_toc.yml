@@ -4,45 +4,24 @@
 format: jb-book
 root: intro
 parts:
-    - caption: About Duckietown (cities)
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_1_AboutDuckietown/chapter_a_SignalLayers/index
-            sections:
-                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_1_City-FloorLayer
-                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_2_City-RoadSignalsLayer
-                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_3_City-InfrastructureLayer
-                - file: part_1_AboutDuckietown/chapter_a_SignalLayers/section_4_City-NonFunctionalElements
-          - file: part_1_AboutDuckietown/chapter_b_AppSpecs/index
-            sections:
-                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_1_AppSpecs-FloorLayer
-                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_2_AppSpecs-Topology
-                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_3_AppSpecs-TrafficSigns
-                - file: part_1_AboutDuckietown/chapter_b_AppSpecs/section_4_AppSpecs-TrafficLights
-          - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/index
-            sections:
-                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_1_DTTypes-EmptyMap
-                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_2_DTTypes-CityLoop
-                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_3_DTTypes-NavigableCities
-                - file: part_1_AboutDuckietown/chapter_c_DuckietownTypes/section_4_DTTypes-AutolabPointers
-    - caption: Assembling Duckietown (cities)
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/index
-            sections:
-                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_1_Assembly-Tiles-Preliminaries
-                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_2_Assembly-Tiles-Straights
-                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_3_Assembly-Tiles-Curves
-                - file: part_2_DTAssembly/chapter_a_Assembly-Tiles/section_4_Assembly-Tiles-Intersections
-          - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/index
-            sections:
-                - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/section_1_ATS-Preliminaries
-                - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/section_2_ATS-Assembly
-                - file: part_2_DTAssembly/chapter_b_Assembly-TrafficSigns/section_3_ATS-MakingNewSigns
-          - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/index
-            sections:
-                - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/section_1_ATL-Overview
-                - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/section_2_ATL-Assembly
-                - file: part_2_DTAssembly/chapter_c_Assembly-TrafficLights/section_3_ATL-SetupAndInitialization
+    -   caption: Appearance Specifications
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: appearance_specifications/index
+            -   file: appearance_specifications/tilemap/index
+            -   file: appearance_specifications/traffic_signs/index
+            -   file: appearance_specifications/traffic_lights/index
+            -   file: appearance_specifications/street_names/index
+            -   file: appearance_specifications/parking_lots/index
+            -   file: appearance_specifications/launch_tiles/index
+            -   file: appearance_specifications/infrastructure/index
+            -   file: appearance_specifications/decorations/index
+
+    -   caption: Assembly
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: assembly/tilemap/index
+            -   file: assembly/traffic_signs/index
+            -   file: assembly/traffic_lights/index
