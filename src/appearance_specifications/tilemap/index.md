@@ -1,10 +1,22 @@
 (specs-layer-tilemap)=
 # Layer - Tilemap
 
-The `tilemap` layer is the layer definign the road network, and it is made of interlocking black tiles. 
-Each tile represents one road element: `straight`, `curve`, `3-way` intersection, `4-way` intersection 
+The `tilemap` layer is the layer definign the road network. 
+Duckietown roads are obtained by applying colored lane markings to a black background.
+
+Duckietown cities are a concatenation of fundamental building blocks and we often refer to 
+these block as _tiles_, because of the medium we assemble them upon.
+
+Each tile has rigorously defined geometry and color pattern and
+represents one road element: `straight`, `curve`, `3-way` intersection, `4-way` intersection 
 and `empty` tile. The road elements are positioned in specific orders to create compliant Duckietowns. 
 The road elements are shown in {numref}`fig:tiles`.
+
+```{note}
+Road markings convey important information to the Duckiebots: 
+* delimiting the lanes (white and yellow markings), and
+* identifying stop signs (red markings). 
+```
 
 ```{note}
 The left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
