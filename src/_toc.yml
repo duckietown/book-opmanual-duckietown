@@ -25,3 +25,6 @@ parts:
             -   file: assembly/tilemap/index
             -   file: assembly/traffic_signs/index
             -   file: assembly/traffic_lights/index
+                sections:
+                    - file: assembly/traffic_lights/dt21_tl
+                    - file: assembly/traffic_lights/dt18_tl
