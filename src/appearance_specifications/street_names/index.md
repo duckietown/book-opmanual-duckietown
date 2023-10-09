@@ -1,37 +1,30 @@
 (specs-layer-street-names)=
-# Layer - Street Name Signs {bdg-warning}`BETA`
+# Layer - Street Name Signs {bdg-warning}
 
-```{note}
+```{attention}
 The traffic sign type described here is experimental. Use at your own risk!
+```
+
+Street names are non functional (i.e., they are not hardcoded in any Duckiebot behavior), but can add a pleasing outreach element to the city.
+
+```{tip}
+Especially if you are an Assistant Professor, you should consider dedicating the main avenue of your Duckietown to your Department Head. 
 ```
 
 ## Specifications
 
 * Font: Arial.
-
-* Color: white as foreground and green as background.
-
-* Border: no additional borders
-
-* The rounded corners are modified into 90 degrees.
-
-* Height: center of the sign height is 1.5 in. (**2.1 in**),
-
-* Width: Currently 4.5 in for id 500-511. (**6.1 in +1.1 in "ST" or 5.5 in + 1.7 in “AVE”**)
-
 * Alphabet =  English upper case. Different writing systems may need different algorithms.
-
+* Color: white as foreground and green as background.
+* Border: no additional borders.
+* Width: Currently 4.5 in for id 500-511. (**6.1 in +1.1 in "ST" or 5.5 in + 1.7 in “AVE”**)
 * Text direction: Horizontal for alphabetical languages.
-
-```{todo}
-clarify street name conventions
-```
 
 ### Placement
 
-* **Similar to traffic lights**: The street name should sit on a pole that is based at the corner of the tile outside of the allowable driving region. The bottom of the street name should be at a height of 7in, and allow a Duckiebot to pass through. The street names should be visible from both sides of the road.
+Street name signs should be placed outside of the allowable driving region. The street names should be visible from both sides of the road.
 
-Every segment of road must have at least one road name sign.
+If you chose to adopt signs, every segment of road must have at least one road name sign.
 
 Every turn tile should have a road name sign.
 
