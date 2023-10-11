@@ -1,5 +1,5 @@
 (specs-layer-traffic-lights)=
-# Layer - Traffic Lights
+# Infrastructure - Traffic Lights
 
 Duckietown traffic lights are more than just blinking lights: they are static robots. We sometimes refer to traffic lights as "Duckiebots without wheels" because they originally had similar capabilities to the `DB18` Duckiebot models, less that to move.
 
@@ -16,7 +16,7 @@ The assembly instructions for traffic lights can be found here:
  * [Traffic light assembly instructions](traffic-light-assembly-21),
  * [Legacy traffic light assembly instructions](traffic-light-assembly-18),
 
-
+(specs-layer-traffic-lights-placement)=
 ## Placement
 
 Traffic lights are typically placed over the diagonal direction of intersection tiles. Any intersection is allowed to have a traffic light.
@@ -32,5 +32,5 @@ the allowable driving region. The cabling is designed to be housed in the approp
     :name: subfig:traffic-light-dt18
     :width: 90%
 
-    traffic light
-    ```
+A Duckietown-compliant traffic light.
+```

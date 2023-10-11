@@ -11,11 +11,13 @@ parts:
             -   file: appearance_specifications/index
             -   file: appearance_specifications/tilemap/index
             -   file: appearance_specifications/traffic_signs/index
-            -   file: appearance_specifications/traffic_lights/index
-            -   file: appearance_specifications/street_names/index
-            -   file: appearance_specifications/parking_lots/index
-            -   file: appearance_specifications/launch_tiles/index
+                sections:
+                    - file: appearance_specifications/street_names/index
             -   file: appearance_specifications/infrastructure/index
+                sections:
+                    - file: appearance_specifications/traffic_lights/index
+#            -   file: appearance_specifications/parking_lots/index
+#            -   file: appearance_specifications/launch_tiles/index
             -   file: appearance_specifications/decorations/index
 
     -   caption: Assembly

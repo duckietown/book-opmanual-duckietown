@@ -1,5 +1,5 @@
 (specs-layer-street-names)=
-# Layer - Street Name Signs {bdg-warning}
+# Traffic signs - Street Name Signs
 
 ```{attention}
 The traffic sign type described here is experimental. Use at your own risk!

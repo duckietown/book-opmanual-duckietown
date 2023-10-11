@@ -1,3 +1,4 @@
+(duckietown-app-specs-intro)=
 # Introduction
 
 Functionally, Duckietown cities are an integral part of the robotic ecosystem we call Duckietown. 
