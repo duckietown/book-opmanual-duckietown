@@ -1,0 +1,5 @@
+1. Follow Step1~12. You're done!
+2. The spec of those spacers and screws
+	a. Spacers: M2.5, 12mm
+	b. Screws: (M2.5, 6mm)*2 (M2.5, 4mm)*2
+3. After all these, assemble tubes with your chasis.

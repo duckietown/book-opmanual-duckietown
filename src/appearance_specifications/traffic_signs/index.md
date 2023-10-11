@@ -28,7 +28,7 @@ Traffic signs can be used for other purposes
 
 ```{note}
 Traffic signs can moreover be used for:
-* naming roads (and making the department head happy);
+* naming roads (and making the department head proud);
 * identifying pedestrian traffic areas;
 * identifying parking lots.
 ```
@@ -40,7 +40,7 @@ Traffic signage in Duckietown is obtained through the union of traffic signs and
 
 ```{figure} ../../_images/appearance_specifications/signs/traffic-sign-example.png
 :name: fig:traffic-sign-example
-:width: 80%
+:width: 50%
 
 A traffic sign in Duckietown (do not print this one out!)
 ```
