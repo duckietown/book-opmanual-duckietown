@@ -7,7 +7,7 @@
 There is a small yellow box in the top left corner of each picture. This box is telling you which parts are needed to complete that assembly step.
 
 :::{note}
-At some steps, you see a small glue icon on it. Those parts are not separated anymore no matter if you are building a Watchtower (WT) or a Traffic Light (TL). If you arrive at such a step, make sure that the parts are really connecting rigidly. Maybe they are already stuck together without glue, but most of the time its wise to use at least some of it just for the security of our citizens!
+At times you will see a small glue icon in the yellow box. That is to indicate some parts will no longer be separated, no matter if you are building a Watchtower (WT) or a Traffic Light (TL). While actual glue might not be necessary, we recommend a rigid connection.
 :::
 
 (subsec:howto-ground-structure-TL21)=

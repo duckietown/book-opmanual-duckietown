@@ -2,7 +2,7 @@
 # Assembly - Traffic Signs
 
 ```{needget}
-The materials to build Duckietown signals.
+The materials to build Duckietown signals ([Duckietown project shop](https://get.duckietown.com/products/additional-traffic-signs))
 ---
 A set of signs to be used for assembling your Duckietown.
 ```
@@ -10,7 +10,7 @@ A set of signs to be used for assembling your Duckietown.
 
 ## Build a Map
 
-Before beginning with sign assembly you should design a tilemap that adheres 
+Before beginning with sign assembly you should design a tilemap that adheres
 to [the tilemap layer specifications](specs-layer-tilemap).
 
 The full set of currently existing signs is available [here](https://github.com/duckietown/signs-and-tags).

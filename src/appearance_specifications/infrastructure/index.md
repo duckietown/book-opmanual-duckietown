@@ -1,5 +1,5 @@
 (dt-ops-infrastructure-layer)=
-# Layer - Smart Infrastructure
+# Layer - Infrastructure
 
 The infrastructure layer is made of:
 * [traffic lights](specs-layer-traffic-lights), and 

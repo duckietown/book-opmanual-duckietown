@@ -3,14 +3,14 @@
 
 ```{needget}
 * Knowledge of the [Duckietown Appearance Specifications](book)
-* Materials: tiles, white, yellow and red road markings
+* Materials: compliant tiles, white, yellow and red road markings ([Duckietown project shop](https://get.duckietown.com/products/duckietown-navigation-starter-pack))
 * Tools: scissors (or a sharp cutter) and a ruler
-* Duckietown road tiles
 ---
 * You will have tiles that comply to the Duckietown operation standards
 * You can move on to [Assembly of other components](#dt-ops-assembly)
 ```
 
+(dt-ops-tiles-foreword)=
 ## Before we begin 
 ```{tip}
 To ensure that your streets will last long, make sure to follow these: 
@@ -27,6 +27,7 @@ Each straight road segment has:
 * Dashed yellow markings at the center
 * Each lane is 21 cm wide (from end of white to beginning of yellow)
 
+(dt-ops-tiles-straight-assembly)=
 ### Assembly
 
 Start by placing the yellow tape in the middle of the tile as shown in {numref}`fig:tile_instruction_straight_1`.
@@ -67,7 +68,8 @@ Each curved road segment has:
  * Solid white markings on the outer sides of the lanes (right of direction of travel)
  * Dashed yellow markings at the center
  * Each lane is 21 cm wide (from end of white to beginning of yellow)
- 
+
+(dt-ops-tiles-curves-assembly)= 
 ### Assembly 
 
 If you have a laser cutter available, you can use the provided file from [here](https://github.com/duckietown/docs-opmanual_duckietown/tree/daffy/book/opmanual_duckietown/TileTemplates/CurvedTileTemplate) to laser cut the template shown below. 
