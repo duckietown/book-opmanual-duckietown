@@ -122,5 +122,5 @@ Traffic sign stand assembled with mounted traffic sign
 
 ## Placement
 
-Refer to [](traffic-signs-placement) for guidelines on sign placement.
+Refer to [](specs-layer-traffic-signs-placement) for guidelines on sign placement.
 

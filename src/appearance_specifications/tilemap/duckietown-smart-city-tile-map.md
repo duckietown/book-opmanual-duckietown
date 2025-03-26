@@ -37,6 +37,9 @@ Each tile is square and measures `61 cm x 61 cm` (`2 ft x 2 ft`) from the outer 
 
 * - ```{figure} ../../_images/appearance_specifications/tiles/DT17_tile_straight-texture.png
     :name: subfig:straight
+    :width: 300px
+    :align: center
+    :alt: Duckietown straight tile
 
     The straight tile
     ```

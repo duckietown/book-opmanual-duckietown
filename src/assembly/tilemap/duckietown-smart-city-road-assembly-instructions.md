@@ -35,14 +35,18 @@ Each straight road segment has:
 (dt-ops-tiles-straight-assembly)=
 ### Assembly
 
-1. Place the yellow tape in the middle of the tile as shown in {numref}`fig:tile_instruction_straight_1`.
-2. Ensure the yellow tape is properly centered, with a distance of 27.25 cm from the tape’s edge to the tile's edge, as in {numref}`fig:tile_instruction_straight_2`.
+Refer to {numref}`fig:tile_instruction_straight_3` for the following steps:
+
+1. Place the yellow tape in the middle of the tile
+2. Ensure the yellow tape is properly centered, with a distance of 27.25 cm from the tape’s edge to the tile's edge
 3. Cut the yellow tape into 2.5 cm pieces, starting 5 cm from the tile's outer edge.
-4. Add white lane markings at the outer parts of the tile, 21 cm from the yellow tape, as in {numref}`fig:tile_instruction_straight_3`.
+4. Add white lane markings at the outer parts of the tile, 21 cm from the yellow tape
 
 ```{figure} ../../_images/assembly/tilemap/instructions/straight_3_done_arrows.png
-:width: 100%
+:width: 80%
 :name: fig:tile_instruction_straight_3
+:align: center
+:alt: Assembled straight Duckietown tile with measurements
 
 Finished straight road segment with measurements.
 ```
@@ -56,16 +60,50 @@ Each curved road segment has:
 - Dashed yellow markings at the center.
 - Each lane is 21 cm wide (from the end of the white to the beginning of the yellow).
 
+```{figure} ../../_images/appearance_specifications/tiles/curved_appearance_spec.png
+:width: 80%
+:name: fig:tile_instruction_curved_3-2
+:align: center
+:alt: Assembled curved Duckietown tile with measurements
+
+
+Final result: curved Duckietown tile (with measurements)
+```
+
 (dt-ops-tiles-curves-assembly)=
 ### Assembly
 
-If you have a laser cutter, use the provided file [Duckietown Curve Tile Construction template](https://github.com/duckietown/docs-opmanual_duckietown/tree/daffy/book/opmanual_duckietown/TileTemplates/CurvedTileTemplate). Without a laser cutter, mark a quarter-circle path for the yellow tape using a string. Follow the guidelines for tape placement and lane width measurements in {numref}`fig:tile_instruction_curved_3`.
+If you have a laser cutter, use the provided [Duckietown curve tile construction template](https://github.com/duckietown/docs-opmanual_duckietown/tree/daffy/book/opmanual_duckietown/TileTemplates/CurvedTileTemplate) to proceed more swiftly and precisely in the assembly process. 
+
+```{figure} ../../_images/assembly/tilemap/instructions/curved_1_done.png
+:width: 80%
+:name: fig:curved-tile-template-usage
+:align: center
+:alt: How to use the Duckietown curve tile construction template
+
+Using the provided construction template makes building Duckietown curve tiles more joyful
+```
+
+Without construction template, mark a quarter-circle path for the yellow tape using a string. Follow the guidelines for tape placement and lane width measurements in {numref}`fig:tile_instruction_curved_3`.
 
 ```{figure} ../../_images/assembly/tilemap/instructions/curved_3_done.png
-:width: 100%
+:width: 80%
 :name: fig:tile_instruction_curved_3
+:align: center
+:alt: Building a curved Duckietown tile, first lane
 
-Measurement of lane width and white tape placement.
+
+Start from the yellow line and then measure the lane width to determine the position of the white tape 
+```
+
+```{figure} ../../_images/assembly/tilemap/instructions/curved_5_done.png
+:width: 80%
+:name: fig:tile_instruction_curved_5
+:align: center
+:alt: Building a curved Duckietown tile, second lane
+
+
+Take 3-5 measurement points across the quarter-circumference to identify the location of the outer lane white tape. Aim to having the correct lane width but do not overdo it, autonomy algorithms should be robust to small variations of lane widths. 
 ```
 
 (dt-ops-tiles-intersections)=
@@ -81,14 +119,17 @@ Each intersection (3- or 4-way) has:
 ### Assembly of 4-Way Intersection
 
 1. Place four yellow tape strips, centered and extending 6 cm from the tile’s edge.
-2. Align red tape horizontally with the edge and cut it to 21 cm, as shown in {numref}`fig:tile_instruction_4way_3`.
+2. Align red tape horizontally with the edge and cut it to 21 cm, as shown in {numref}`fig:tile_instruction_4way_7`.
 3. Cut yellow markings into 5 cm pieces and add white tape at the corners.
 
 ```{figure} ../../_images/assembly/tilemap/instructions/4way_7_done.png
-:width: 100%
+:width: 80%
 :name: fig:tile_instruction_4way_7
+:align: center
+:alt: Assembled 4-way Duckietown intersection tile
 
-Finished 4-way intersection road segment.
+
+4-way intersection road segment.
 ```
 
 ### Assembly of 3-Way Intersection
@@ -96,10 +137,13 @@ Finished 4-way intersection road segment.
 3-way intersections follow the same process, except one edge uses white tape instead of red and yellow. The result can be seen in {numref}`fig:tile_instruction_3way_1`.
 
 ```{figure} ../../_images/assembly/tilemap/instructions/3way_1_done.png
-:width: 100%
+:width: 80%
 :name: fig:tile_instruction_3way_1
+:align: center
+:alt: Assembled 3-way Duckietown intersection tile
 
-Finished 3-way intersection road segment.
+
+3-way intersection road segment.
 ```
 
 (dt-ops-tiles-troubleshooting)=

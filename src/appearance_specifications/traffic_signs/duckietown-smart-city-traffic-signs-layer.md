@@ -168,7 +168,8 @@ The allowable traffic signs in Duckietown are listed in {numref}`tab:traffic-sig
   
 ````
 
-## Placement
+(specs-layer-traffic-signs-placement)=
+## Traffic Sign Placement
 
 Traffic signs should be placed on empty tiles or at the border of a map. It is crucial to ensure the base of the sign stand does not overlap with any road markings.
 
